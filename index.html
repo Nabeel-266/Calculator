@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-awesome-Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- For Font-families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Comfortaa:wght@300;400;500;600;700&family=Nova+Flat&family=Nova+Round&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+
+            <div class="subcontainer-01">
+                <h1>#Calculate <br> { Your : <br> Airthmetic <br> Operations; }</h1>
+            </div>
+
+            <div class="subcontainer-02">
+                <div id="calculator">
+
+                    <div class="display">
+                        <input type="text" name="display" id="output" placeholder="0" readonly>
+                    </div>
+
+                    <div class="buttons">
+
+                        <div class="row-01">
+                            <button class="standard" onclick="clr()">AC</button>
+                            <button class="standard" onclick="delt()">DE</button>
+                            <button class="function" onclick="display('%')">%</button>
+                            <button class="function" onclick="display('/')">/</button>
+                        </div>
+
+                        <div class="row-01">
+                            <button class="number" onclick="display('7')">7</button>
+                            <button class="number" onclick="display('8')">8</button>
+                            <button class="number" onclick="display('9')">9</button>
+                            <button class="function" onclick="display('*')">x</button>
+                        </div>
+
+                        <div class="row-01">
+                            <button class="number" onclick="display('4')">4</button>
+                            <button class="number" onclick="display('5')">5</button>
+                            <button class="number" onclick="display('6')">6</button>
+                            <button class="function" onclick="display('-')">-</button>
+                        </div>
+
+                        <div class="row-01">
+                            <button class="number" onclick="display('1')">1</button>
+                            <button class="number" onclick="display('2')">2</button>
+                            <button class="number" onclick="display('3')">3</button>
+                            <button class="function" onclick="display('+')">+</button>
+                        </div>
+
+                        <div class="row-01">
+                            <button class="function" onclick="display('.')">.</button>
+                            <button class="number" onclick="display('0')">0</button>
+                            <button class="equal-to function" onclick="calculate('')"> = </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

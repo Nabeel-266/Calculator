@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background: linear-gradient(to top left, #43C6AC -20%, #191654 100%);
+    font-family: 'Varela Round', sans-serif;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    width: 85%;
+    height: 90%;
+    display: flex;
+}
+.subcontainer-01{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subcontainer-01 h1{
+    font-size: 60px;
+    line-height: 80px;
+    color: white;
+}
+.subcontainer-02{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calculator{
+    width: 55%;
+    height: 80%;
+    background-color: rgb(28, 28, 56);
+    padding: 35px 25px 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 4px solid rgb(63, 63, 107);
+    border-radius: 10px;
+}
+.display{
+    width: 100%;
+    height: 20%;
+}
+.display input{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(28, 28, 56);
+    color: white;
+    text-align: right;
+    box-shadow: -5px -5px 6px rgb(63, 63, 107);
+    border-radius: 10px;
+}
+.display input::placeholder{
+    color: white;
+    font-size: 35px;
+}
+.buttons{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.row-01{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row-01 button{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: rgb(37, 37, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -3px -4px 5px rgb(63, 63, 107);
+    font-family: 'Varela Round', sans-serif;
+}
+.function{
+    font-size: 22px;
+    color: rgb(0, 195, 255);
+}
+.standard{
+    font-size: 19px;
+    color: white;
+}
+.equal-to{
+    width: 11.9rem !important;
+    height: 4.5rem;
+    font-size: 30px;
+}
+.number{
+    font-size: 19px;
+    color: white;
+}
+.sqr-rt{
+    font-weight: bold ;
+}
+.rational{
+    font-size: 19px;
+}
