@@ -44,8 +44,8 @@ body{
     align-items: center;
 }
 #calculator{
-    width: 55%;
-    height: 80%;
+    width: 325px;
+    height: 500px;
     background-color: rgb(28, 28, 56);
     padding: 35px 25px 10px 25px;
     display: flex;
@@ -72,7 +72,7 @@ body{
     border-radius: 10px;
 }
 .display input::placeholder{
-    color: white;
+    color: rgb(199, 199, 199);
     font-size: 35px;
 }
 .buttons{
@@ -124,3 +124,82 @@ body{
 .rational{
     font-size: 19px;
 }
+
+
+
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+    body{
+        background: linear-gradient(to top, #43C6AC -20%, #191654 100%);
+    }
+
+    #container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .subcontainer-01{
+        margin-bottom: 50px;
+        width: 360px;
+    }
+    .subcontainer-01 h1{
+        font-size: 55px;
+    }
+    .subcontainer-02{
+        width: 360px;
+    }
+  }
+
+  /* Tablet */
+  @media(min-width: 501px) and (max-width: 774px) {
+    body{
+        background: linear-gradient(to top, #43C6AC -20%, #191654 100%);
+    }
+
+    #container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .subcontainer-01{
+        margin-bottom: 50px;
+        width: 400px;
+    }
+    .subcontainer-02{
+        width: 400px;
+    }
+  }
+
+  /* Normal */
+  @media(min-width: 775px) and (max-width: 1200px) {
+    #container{
+        width: 95%;
+        height: 90%;
+        display: flex;
+    }
+  }
+
+  /* Widescreen */
+  /* @media(min-width: 1201px) {
+    body {
+      background: black;
+    }
+
+    #widescreen h1 {
+      display: block;
+    }
+  } */
+
+  /* Landscape */
+  /* @media(max-height: 500px) {
+    body {
+      background: orange;
+    }
+
+    #landscape h1 {
+      display: block;
+    }
+    
+  } */
