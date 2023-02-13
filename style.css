@@ -16,6 +16,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to top left, #43C6AC -20%, #191654 100%);
 }
 #container{
     width: 85%;
@@ -129,8 +130,9 @@ body{
 
 /* Smartphones */
 @media only screen and (max-width: 500px) {
-    body{
-        background: linear-gradient(to top, #43C6AC -20%, #191654 100%);
+    #main{
+        background: linear-gradient(to top left, #43C6AC -20%, #191654 100%);
+        height: 950px;
     }
 
     #container{
@@ -148,6 +150,7 @@ body{
     }
     .subcontainer-02{
         width: 360px;
+        margin-bottom: 50px;
     }
   }
 
