@@ -128,7 +128,34 @@ body{
 
 
 
-/* Smartphones */
+/* Smartphones Mobile Medium*/
+@media only screen and (max-width: 375px) {
+    #main{
+        background: linear-gradient(to top left, #43C6AC -20%, #191654 100%);
+        height: 950px;
+    }
+
+    #container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .subcontainer-01{
+        margin-bottom: 50px;
+        width: 360px;
+    }
+    .subcontainer-01 h1{
+        font-size: 55px;
+    }
+    .subcontainer-02{
+        width: 360px;
+        margin-bottom: 50px;
+    }
+  }
+
+/* Smartphones Mobile Large*/
 @media only screen and (max-width: 500px) {
     #main{
         background: linear-gradient(to top left, #43C6AC -20%, #191654 100%);
